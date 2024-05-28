@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  color: #ebe7ef;
+  background: radial-gradient(#000000, #20043d);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+
+header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+header img {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 4rem;
+  background: linear-gradient(40deg, #ff0000, #ff00ff, #00ff00, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.75));
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #c48efc;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+#core-concepts {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #1a001f;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  margin: 0 0 1.5rem 0;
+  color: #ff69b4;
+  text-shadow: 0 0 10px #ff69b4;
+}
+
+#core-concepts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#core-concepts li {
+  width: 10rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#core-concepts li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+}
+
+#core-concepts li img {
+  width: 100%;
+  height: auto;
+  max-height: 6rem;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+#core-concepts li h3 {
+  margin: 0.5rem 0;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff69b4;
+  text-shadow: 0 0 5px #ff69b4;
+}
+
+#core-concepts li p {
+  font-size: 0.9rem;
+  color: #c48efc;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#examples {
+  margin: 3rem auto;
+}
+
+#examples h2 {
+  text-align: left;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff69b4;
+}
+
+#examples menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ff69b4;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#examples menu button:hover {
+  background-color: #330033;
+  color: #ebe7ef;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+#examples menu button.active {
+  background-color: #ff69b4;
+  color: #ebe7ef;
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #330033;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+
+#tab-content h3 {
+  margin: 0;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff69b4;
+  text-shadow: 0 0 5px #ff69b4;
+}
+
+#tab-content code {
+  font-size: 1rem;
+  color: #ff69b4;
+  font-family: "Roboto Condensed", sans-serif;
+}
