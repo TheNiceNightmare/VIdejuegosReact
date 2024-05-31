@@ -1,25 +1,6 @@
-import gameImg from './assets/game-core-concepts.png';
+import Header from './components/Header.jsx';
+import CoreConcept from './components/CoreConcept.jsx';
 import { GAME_CONCEPTS } from './data.js';
-
-function Header() {
-  return (
-    <header>
-      <img src={gameImg} alt="Game controller icon" />
-      <h1>Video Game Essentials</h1>
-      <p>Discover some of the most iconic video games and their unique features!</p>
-    </header>
-  );
-}
-
-function CoreConcept(props) {
-  return (
-    <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </li>
-  );
-}
 
 function App() {
   return (
@@ -33,9 +14,7 @@ function App() {
             {GAME_CONCEPTS.map((concept, index) => (
               <CoreConcept
                 key={index}
-                title={concept.title}
-                description={concept.description}
-                image={concept.image}
+                {...concept}
               />
             ))}
           </ul>
